@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 15</title>
+    </head>
+    <body>
+        <script language="javascript">
+            window.alert("Neste programa, o segundo número digitado deverá ser maior que o primeiro.");
+            var n1, n2;
+            n1 = parseFloat(window.prompt("Digite o primeiro número:"));
+            n2 = parseFloat(window.prompt("Digite o segundo número:"));
+            if (n1 > n2){
+                while(n1 > n2)
+                {
+                    n2 = parseFloat(window.prompt("O primeiro valor é maior que o segundo. Informe outro segundo valor:"))
+                    if (n2 > n1)
+                        document.write("O segundo valor é maior que o primeiro.");
+                        break;
+                }   
+            }
+            else{
+                document.write("O segundo valor é maior que o primeiro.");
+            }
+        </script>
+    </body>

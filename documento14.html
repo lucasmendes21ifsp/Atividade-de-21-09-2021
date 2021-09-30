@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 14</title>
+    </head>
+    <body>
+        <script language = "javascript">
+            window.alert("Este progarama verifica se os valores A, B e C digitados formam um triângulo retãngulo.");
+            var ladoA, ladoB, ladoC;
+            var hipotenusa, cateto1, cateto2;
+            ladoA = parseInt(window.prompt("Digite o lado A:"));
+            ladoB = parseInt(window.prompt("Digite o lado B:"));
+            ladoC = parseInt(window.prompt("Digite o lado C:"));
+            
+            if (ladoA > ladoB && ladoA > ladoC)
+            {
+                hipotenusa = ladoA;
+                cateto1 = ladoB;
+                cateto2 = ladoC;
+            }
+            else if (ladoB > ladoA && ladoB > ladoC)
+            {
+                 hipotenusa = ladoB;
+                 cateto1 = ladoA;
+                 cateto2 = ladoC;
+            }
+            else
+            {
+                hipotenusa = ladoC;
+                cateto1 = ladoA;
+                cateto2 = ladoB;
+            }
+
+            if (Math.Pow(hipotenusa, 2) == Math.Pow(cateto1, 2) + Math.Pow(cateto2, 2))
+                document.write("Os valores formam um triângulo retângulo");
+            else
+                document.write("Os valores não formam um triângulo retângulo");
+        </script>
+    </body>
+</html>
